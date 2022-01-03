@@ -31,13 +31,13 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: V-Sekai Shader Motion Video To Anims (glTF2) 
-        path: blockmesh/*.glb
+        path: No_Logic_Dave/*.glb
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
         type: 'zip'
-        filename: V-Sekai_Models.zip
-        path: blockmesh/*
+        filename: V-Sekai_Anims.zip
+        path: No_Logic_Dave/*
           LICENSE
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:
