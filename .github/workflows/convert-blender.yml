@@ -22,22 +22,22 @@ jobs:
       shell: bash
     - name: Copy license
       run: |
-        cp LICENSE No_Logic_Dave/
+        cp LICENSE export/
       shell: bash
     - uses: actions/upload-artifact@v2
       with:
         name: V-Sekai Shader Motion Video To Anims (VRM) 
-        path: No_Logic_Dave/*.vrm        
+        path: export/*.vrm        
     - uses: actions/upload-artifact@v2
       with:
         name: V-Sekai Shader Motion Video To Anims (glTF2) 
-        path: No_Logic_Dave/*.glb
+        path: export/*.glb
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
         type: 'zip'
         filename: V-Sekai_Anims.zip
-        path: No_Logic_Dave/*
+        path: export/*
           LICENSE
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:

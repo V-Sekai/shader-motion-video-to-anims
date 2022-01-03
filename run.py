@@ -42,9 +42,9 @@ path = argv[0]
 
 bpy.ops.preferences.addon_install(filepath=os.path.join(path, "2_0_9.zip"))
 bpy.ops.preferences.addon_enable(module="VRM_Addon_for_Blender-2_0_9")
-export_path = os.path.join(path, 'No_Logic_Dave')
+export_path = os.path.join(path, 'export')
 
-directories = ["characters"]
+directories = ["No_Logic_Dave"]
 shutil.rmtree(export_path, ignore_errors=True)
 posixpath.os.mkdir(export_path, mode=0o777)
 for directory in directories:
@@ -61,7 +61,7 @@ for directory in directories:
                 filepath=os.path.join(export_path, basename + ".vrm")
             )
 
-directories = ["environments", "objects", "characters"]
+directories = ["No_Logic_Dave"]
 for directory in directories:
     for root, subdirs, files in os.walk(os.path.join(path, directory)):   
         for subdir in subdirs:
