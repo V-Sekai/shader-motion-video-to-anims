@@ -81,5 +81,5 @@ for directory in directories:
                 export_extras=True,
                 export_cameras=True,
                 export_lights=True,
-                export_copyright="Creative Commons Attribution 4.0 International Public License 2021 V-Sekai. 2019 Wonder Unit. See https://github.com/V-Sekai/blue-tin-fox-models for attributed files.",
+                export_copyright="Creative Commons Attribution 4.0 International Public License 2021 V-Sekai & No Logic David. See https://github.com/V-Sekai/shader-motion-video-to-anims for attributed files.",
             )
