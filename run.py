@@ -60,8 +60,6 @@ for directory in directories:
             bpy.ops.export_scene.vrm(
                 filepath=os.path.join(export_path, basename + ".vrm")
             )
-
-directories = ["No_Logic_Dave"]
 for directory in directories:
     for root, subdirs, files in os.walk(os.path.join(path, directory)):   
         for subdir in subdirs:
